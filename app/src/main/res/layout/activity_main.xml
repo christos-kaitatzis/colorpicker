@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="gr.myapp.colorpicker.MainActivity">
+
+    <TextView
+        android:background="#c8545454"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hex color code:"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:background="#c8545454"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:padding="10dp"
+        android:id="@+id/txtColor"
+        android:textStyle="italic|bold"
+        android:textColor="#e2e2e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#ffffff"/>
+
+
+    <TextView
+        android:padding="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtr"
+        android:layout_above="@+id/ll1"
+        android:background="#c8545454"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"/>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:id="@+id/ll1"
+        android:layout_above="@+id/txtg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:onClick="changeBack1Min"
+            android:id="@+id/bt1"
+            android:text="-"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#c8545454"
+            android:id="@+id/tx1"
+            android:textAlignment="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="255"/>
+
+
+        <Button
+            android:onClick="changeBack1Plus"
+            android:text="+"
+            android:id="@+id/bt2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtg"
+        android:layout_above="@+id/ll2"
+        android:background="#c8545454"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2"
+        android:layout_above="@+id/txtb">
+
+        <Button
+            android:onClick="changeBack2Min"
+            android:text="-"
+            android:id="@+id/bt3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#c8545454"
+            android:id="@+id/tx2"
+            android:textAlignment="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="255"/>
+
+
+        <Button
+            android:onClick="changeBack2Plus"
+            android:text="+"
+            android:id="@+id/bt4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="2dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtb"
+        android:layout_above="@+id/ll3"
+        android:background="#c8545454"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll3"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:onClick="changeBack3Min"
+            android:text="-"
+            android:id="@+id/bt5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#c8545454"
+            android:id="@+id/tx3"
+            android:textAlignment="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="255"/>
+
+
+        <Button
+            android:onClick="changeBack3Plus"
+            android:text="+"
+            android:id="@+id/bt6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
